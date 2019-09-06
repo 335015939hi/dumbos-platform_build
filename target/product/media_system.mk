@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
     make_f2fs \
     requestsync \
 
+ifeq ($(OFFICIAL_BUILD),true)
+    PRODUCT_PACKAGES += Updater
+endif
+
 # Allowlist for system packages included in media_system.mk
 PRODUCT_PACKAGES += preinstalled-packages-media-system.xml
 
