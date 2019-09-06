@@ -40,6 +40,10 @@ ifeq ($(RELEASE_PACKAGE_COMPUTER_CONTROL),true)
   PRODUCT_PACKAGES += VirtualDeviceManager
 endif
 
+ifeq ($(OFFICIAL_BUILD),true)
+    PRODUCT_PACKAGES += Updater
+endif
+
 PRODUCT_HOST_PACKAGES += \
     fsck.f2fs \
 
