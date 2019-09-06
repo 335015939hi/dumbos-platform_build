@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
     make_f2fs \
     requestsync \
 
+ifeq ($(OFFICIAL_BUILD),true)
+    PRODUCT_PACKAGES += Updater
+endif
+
 PRODUCT_HOST_PACKAGES += \
     fsck.f2fs \
 
