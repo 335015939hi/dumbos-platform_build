@@ -44,6 +44,8 @@ ifeq ($(OFFICIAL_BUILD),true)
     PRODUCT_PACKAGES += Updater
 endif
 
+PRODUCT_PACKAGES += Seedvault
+
 PRODUCT_HOST_PACKAGES += \
     fsck.f2fs \
 
