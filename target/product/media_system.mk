@@ -40,6 +40,8 @@ ifeq ($(OFFICIAL_BUILD),true)
     PRODUCT_PACKAGES += Updater
 endif
 
+PRODUCT_PACKAGES += Seedvault
+
 # Allowlist for system packages included in media_system.mk
 PRODUCT_PACKAGES += preinstalled-packages-media-system.xml
 
