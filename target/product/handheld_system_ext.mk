@@ -24,7 +24,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_system_ext.mk)
 PRODUCT_PACKAGES += \
     AccessibilityMenu \
     Launcher3QuickStep \
-    NetworkLocation \
     Provision \
     Settings \
     SetupWizard2 \
