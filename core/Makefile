@@ -5146,6 +5146,30 @@ INTERNAL_ALLIMAGES_FILES := \
     $(INTERNAL_SYSTEM_DLKMIMAGE_FILES) \
     $(INTERNAL_PVMFWIMAGE_FILES) \
 
+define write-allimages-file-list
+    $(file >$(PRODUCT_OUT)/allimages-file-list.txt,$(sort $(INTERNAL_ALLIMAGES_FILES)))
+endef
+
+.PHONY: allimages-file-list
+allimages-file-list: $(call write-allimages-file-list)
+
+adevtool-state-collection-inputs: \
+    allimages-file-list \
+    build-props \
+    module-info \
+    selinux_policy \
+    \
+    framework_compatibility_matrix.xml \
+    system_compatibility_matrix.xml \
+    product_compatibility_matrix.xml \
+    vendor_compatibility_matrix.xml \
+    \
+    system_manifest.xml \
+    system_ext_manifest.xml \
+    vendor_manifest.xml \
+
+.PHONY: adevtool-state-collection-inputs
+
 # -----------------------------------------------------------------
 # Run apex_sepolicy_tests for all installed APEXes
 
