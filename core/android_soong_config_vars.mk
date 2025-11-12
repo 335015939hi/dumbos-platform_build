@@ -408,12 +408,6 @@ ifneq ($(filter StorageManager, $(PRODUCT_PACKAGES)),)
   $(call soong_config_set_bool,ci_tests,uses_storage_manager_tests,true)
 endif
 
-ifneq ($(BUILD_OS),darwin)
-  ifneq ($(TARGET_SKIP_OTATOOLS_PACKAGE),true)
-    $(call soong_config_set_bool,otatools,use_otatools_package,true)
-  endif
-endif
-
 # Variables for qcom bluetooth modules.
 $(call soong_config_set,qcom_bluetooth,TARGET_BLUETOOTH_UART_DEVICE,$(TARGET_BLUETOOTH_UART_DEVICE))
 $(call soong_config_set_bool,qcom_bluetooth,BOARD_HAVE_QCOM_FM,$(if $(filter true,$(BOARD_HAVE_QCOM_FM)),true,false))
