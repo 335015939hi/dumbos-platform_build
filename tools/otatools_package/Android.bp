@@ -142,6 +142,7 @@ cc_genrule {
         ":delta_generator",
         ":e2fsck",
         ":e2fsdroid",
+        ":fastboot",
         ":fc_sort",
         ":fec",
         ":fs_config",
