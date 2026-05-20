@@ -36,6 +36,7 @@ PRODUCT_PACKAGES += \
     PdfViewerGOS \
     preinstalled-packages-platform-handheld-product.xml \
     SettingsIntelligence \
+    SpeechServices \
     ThemePicker \
     ThemesStub \
     TrichromeChrome \
