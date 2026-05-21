@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     Contacts \
     DeskClock \
     ExactCalculator \
-    Gallery2 \
+    Gallery \
     InfoApp \
     LatinIME \
     Music \
