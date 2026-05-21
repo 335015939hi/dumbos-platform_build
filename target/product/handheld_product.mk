@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     preinstalled-packages-platform-handheld-product.xml \
     SettingsIntelligence \
     SpeechServices \
+    talkback \
     ThemePicker \
     ThemesStub \
     TrichromeChrome \
