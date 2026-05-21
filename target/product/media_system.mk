@@ -41,6 +41,7 @@ ifeq ($(OFFICIAL_BUILD),true)
 endif
 
 PRODUCT_PACKAGES += Seedvault
+PRODUCT_PACKAGES += spoofed_mic_audio_default
 
 ifeq ($(RELEASE_PACKAGE_COMPUTER_CONTROL),true)
   PRODUCT_PACKAGES += VirtualDeviceManager
