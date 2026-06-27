@@ -40,8 +40,9 @@ PRODUCT_PACKAGES += \
     talkback \
     ThemePicker \
     ThemesStub \
-    TrichromeChrome \
     frameworks-base-overlays
 
 PRODUCT_PACKAGES_DEBUG += \
     frameworks-base-overlays-debug
+
+PRODUCT_PACKAGES += dumbos dumbosd
