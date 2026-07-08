@@ -45,4 +45,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     frameworks-base-overlays-debug
 
-PRODUCT_PACKAGES += dumbos dumbosd
+PRODUCT_PACKAGES += dumbos dumbosd QrBinRunner
