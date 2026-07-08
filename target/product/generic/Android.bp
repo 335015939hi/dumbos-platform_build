@@ -821,7 +821,6 @@ system_image_defaults {
                 "NetworkStack", // base_system
                 "ONS", // telephony_system
                 "PacProcessor", // handheld_system
-                "PackageInstaller", // base_system
                 "PartnerBookmarksProvider", // generic_system
                 "PrintRecommendationService", // handheld_system
                 "PrintSpooler", // handheld_system
