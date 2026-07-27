@@ -22,7 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
 
 # /product packages
 PRODUCT_PACKAGES += \
-    AppStore \
     Auditor \
     Calendar \
     Camera \
@@ -45,4 +44,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     frameworks-base-overlays-debug
 
-PRODUCT_PACKAGES += dumbos dumbosd QrBinRunner
+PRODUCT_PACKAGES += dumbos dumbosd DumbosCode dumbos-firewall-init.sh dumbos-firewall.sh dumbos-firewallctl.sh dumbos-firewall.conf
+
+PRODUCT_PRIVATE_SEPOLICY_DIRS += external/dumbosd/sepolicy
