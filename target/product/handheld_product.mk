@@ -45,5 +45,6 @@ PRODUCT_PACKAGES_DEBUG += \
     frameworks-base-overlays-debug
 
 PRODUCT_PACKAGES += dumbos dumbosd DumbosCode dumbos-firewall-init.sh dumbos-firewall.sh dumbos-firewallctl.sh dumbos-firewall.conf
+PRODUCT_PACKAGES += Lawnchair Lawnicons delta_icons
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS += external/dumbosd/sepolicy
