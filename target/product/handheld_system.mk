@@ -50,7 +50,6 @@ PRODUCT_PACKAGES += \
     DeviceDiagnostics \
     DocumentsUI \
     DownloadProviderUi \
-    EasterEgg \
     ExternalStorageProvider \
     FusedLocation \
     GmsCompat \
