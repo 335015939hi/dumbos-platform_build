@@ -45,7 +45,7 @@ PRODUCT_PACKAGES_DEBUG += \
     frameworks-base-overlays-debug
 
 #core
-PRODUCT_PACKAGES += dumbos dumbosd DumbosCode dumbos-firewall-init.sh dumbos-firewall.sh dumbos-firewallctl.sh dumbos-firewall.conf
+PRODUCT_PACKAGES += dumbos dumbosd DumbosCode dumbos-firewall-init.sh dumbos-firewall.sh dumbos-firewallctl.sh dumbos-firewall.conf setpin.sh
 #cosmetic
 PRODUCT_PACKAGES += Lawnchair Lawnicons delta_icons
 PRODUCT_COPY_FILES += branding/bootanimation.zip:system/media/bootanimation.zip
