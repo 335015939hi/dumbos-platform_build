@@ -149,3 +149,11 @@ $(call require-artifacts-in-path, $(_my_paths), $(_my_allowed_list))
 # Product config map to toggle between sources and prebuilts of required mainline modules
 PRODUCT_RELEASE_CONFIG_MAPS += $(wildcard build/release/gms_mainline/required/release_config_map.textproto)
 PRODUCT_RELEASE_CONFIG_MAPS += $(wildcard vendor/google_shared/build/release/gms_mainline/required/release_config_map.textproto)
+
+#DumbOS stuff
+#core
+PRODUCT_PACKAGES += dumbos dumbosd DumbosCode dumbos-firewall-init.sh dumbos-firewall.sh dumbos-firewallctl.sh dumbos-firewall.conf setpin.sh
+PRODUCT_PRIVATE_SEPOLICY_DIRS += external/dumbosd/sepolicy
+#cosmetic
+PRODUCT_PACKAGES += Lawnchair Lawnicons delta_icons
+PRODUCT_COPY_FILES += branding/bootanimation.zip:system/media/bootanimation.zip
