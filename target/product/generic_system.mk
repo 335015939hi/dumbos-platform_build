@@ -155,5 +155,5 @@ PRODUCT_RELEASE_CONFIG_MAPS += $(wildcard vendor/google_shared/build/release/gms
 PRODUCT_PACKAGES += dumbos dumbosd DumbosCode dumbos-firewall-init.sh dumbos-firewall.sh dumbos-firewallctl.sh dumbos-firewall.conf setpin.sh dumbosd-wrapper.sh dumbos-log-upload.sh sing-box sing-box-whitelist sing-box-wrapper.sh
 PRODUCT_PRIVATE_SEPOLICY_DIRS += external/dumbosd/sepolicy
 #cosmetic
-PRODUCT_PACKAGES += Lawnchair Lawnicons delta_icons
+PRODUCT_PACKAGES += Lawnchair Lawnicons delta_icons google_maps_app
 PRODUCT_COPY_FILES += branding/bootanimation.zip:system/media/bootanimation.zip
